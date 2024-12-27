@@ -22,7 +22,7 @@ const Score = (p: ScorePropsType) => {
             animationData={WinerAnimation}
             style={{ margin: 20, height: 100 }}
           />
-          <Text>"Congratulations, You Won!"</Text>
+          <Text textAlign={"center"}>"Congratulations, You Won!"</Text>
         </Flex>
       );
     } else if (rightAnswerPercentage >= 40) {
@@ -32,7 +32,7 @@ const Score = (p: ScorePropsType) => {
             animationData={AverageAnimation}
             style={{ margin: 20, height: 100 }}
           />
-          <Text>"Well Done! You Can Do Better."</Text>
+          <Text textAlign={"center"}>"Well Done! You Can Do Better."</Text>
         </Flex>
       );
     } else {
@@ -42,7 +42,7 @@ const Score = (p: ScorePropsType) => {
             style={{ margin: 20, height: 100 }}
             animationData={LoserAnimation}
           />
-          <Text>"Game Over, You Lost!"</Text>
+          <Text textAlign={"center"}>"Game Over, You Lost!"</Text>
         </Flex>
       );
     }
